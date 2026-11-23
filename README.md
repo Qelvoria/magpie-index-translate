@@ -46,4 +46,4 @@ magpie provider test index-translate
 
 ## 许可
 
-Apache-2.0。第三方许可见仓库内说明。
+Unlicense。第三方许可见仓库内说明。

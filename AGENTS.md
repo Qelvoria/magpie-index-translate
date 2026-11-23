@@ -76,7 +76,7 @@ test/               5 个文件，覆盖提示词、改写、网关、plugins.js
 
 `bridge/call_api.py` 是官方 `inference/llm/call_api.py` 原样副本，插件运行时不依赖它：一是给 `lib/prompt.mjs` 当对照，二是 `--serve` 网桥（浏览器插件直连公网要 CORS 头、关思维链、`temperature=0`，这三件事插件自己发请求时已经做了，magpie 场景不需要开网桥）。
 
-本项目 Apache-2.0（见 `LICENSE` 与 `package.json`），第三方保留各自许可：
+本项目 Unlicense（见 `LICENSE` 与 `package.json`），第三方保留各自许可：
 
 | 路径 | 来源 | 许可 |
 |---|---|---|

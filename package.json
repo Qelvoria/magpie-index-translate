@@ -6,7 +6,7 @@
   "main": "./index.mjs",
   "files": ["index.mjs", "lib/", "chat/", "page/", "bridge/", "README.md"],
   "keywords": ["opencode", "opencode-plugin", "magpie", "index-translate", "bilibili", "translation"],
-  "license": "Apache-2.0",
+  "license": "Unlicense",
   "magpie": {
     "maxConcurrency": 4,
     "page": {
