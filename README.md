@@ -7,11 +7,12 @@
 ## 安装
 
 ```bash
-git clone https://github.com/Qelvoria/magpie-index-translate
-magpie plugin add <文件夹路径>
+magpie plugin add github:Qelvoria/magpie-index-translate
 magpie plugin login index-translate
 magpie provider test index-translate
 ```
+
+本地开发才需要先 clone：`git clone https://github.com/Qelvoria/magpie-index-translate`，再 `magpie plugin add ./magpie-index-translate`。
 
 ## 模型
 
