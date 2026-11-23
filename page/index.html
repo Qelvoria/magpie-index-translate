@@ -1,0 +1,33 @@
+<!doctype html>
+<!-- 带路页：magpie 的插件页面跑在 sandbox="allow-scripts" 的框架里，CSP 是
+     connect-src 'none'，发不出任何网络请求；它唯一能做的联网动作是把自己导航到别处。
+     所以这一页只负责跳到插件的本地服务（lib/server.mjs），配置和试翻都在那边同一页里。
+     样式全用 bridge 注入的 --magpie-* 变量，没有自己的配色表。 -->
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Index-Translate</title>
+<style>
+  :root { color-scheme: light dark; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    display: grid; place-items: center; padding: 0 16px;
+    font: 13px/1.5 var(--magpie-font, system-ui, sans-serif);
+    background: var(--magpie-bg, Canvas); color: var(--magpie-fg, CanvasText);
+  }
+  .box { max-width: 520px; text-align: center; color: var(--magpie-muted, GrayText); }
+  .box b { display: block; margin-bottom: 4px; font-size: 14px; color: var(--magpie-fg, CanvasText); }
+  .box p { margin: 6px 0; }
+  .box button { margin-top: 8px; font: inherit; padding: 4px 14px; }
+</style>
+</head>
+<body>
+<div class="box" id="said">
+  <b>Index-Translate</b>
+  <p>正在连接本地页面服务…</p>
+</div>
+<script src="_magpie/bridge.js"></script>
+<script src="boot.js"></script>
+</body>
+</html>

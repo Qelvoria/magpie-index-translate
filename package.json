@@ -1,0 +1,25 @@
+{
+  "name": "magpie-index-translate",
+  "version": "0.1.0",
+  "description": "magpie / OpenCode provider plugin: 哔哩哔哩 Index-Translate 翻译模型（150 语种、术语与格式约束、35B 支持图片）",
+  "type": "module",
+  "main": "./index.mjs",
+  "files": ["index.mjs", "lib/", "chat/", "page/", "bridge/", "README.md"],
+  "keywords": ["opencode", "opencode-plugin", "magpie", "index-translate", "bilibili", "translation"],
+  "license": "Apache-2.0",
+  "magpie": {
+    "maxConcurrency": 4,
+    "page": {
+      "title": "Index-Translate",
+      "file": "page/index.html",
+      "titles": { "zh": "翻译" },
+      "service": { "port": 3919, "option": "port" }
+    },
+    "options": {
+      "base": "https://index-translate.bilibili.com/v1",
+      "target": "auto",
+      "instruction": "",
+      "glossary": ""
+    }
+  }
+}
