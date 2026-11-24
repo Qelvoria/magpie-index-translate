@@ -14,6 +14,10 @@ magpie provider test index-translate
 
 本地开发才需要先 clone：`git clone https://github.com/Qelvoria/magpie-index-translate`，再 `magpie plugin add ./magpie-index-translate`。
 
+## 页面
+
+装上后 magpie 侧边栏会多一个「翻译」页：选模型、改选项（目标语言、翻译约束、术语表），直接在对话框里翻译，流式出字，支持公式渲染。页面基于 magpie-chat 裁剪，翻译请求和 agent 走同一条改写路径。
+
 ## 模型
 
 | 模型 | 上下文 | 图片 | 适合 |
