@@ -43,6 +43,10 @@ magpie provider test index-translate
 
 也可以直接在命令行翻译：`bun bin/cli.mjs "文本" -t zh`
 
+## 浏览器桥
+
+不用 magpie 也能用：双击 `bridge/serve.bat` 起本地网桥（默认 127.0.0.1:8080），给沉浸式翻译这类浏览器插件直连公网接口用。magpie 里不需要它。
+
 ## 注意
 
 - 翻译模型不调用工具，也没有通用对话能力。
